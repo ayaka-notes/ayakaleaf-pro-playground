@@ -15,11 +15,6 @@
   <a href="#license">License</a>
 </p>
 
-<img src="https://raw.githubusercontent.com/ayaka-notes/ayakaleaf-pro/server-pro/doc/screenshot-pro.png" alt="A screenshot of a project being edited in Ayakaleaf Pro Edition">
-<p align="center">
-  Figure 1: A screenshot of a project being edited in Ayakaleaf Pro Edition.
-</p>
-
 ## Ayakaleaf Pro Playground
 
 Launch a fully configured Ayakaleaf Pro demo in your browser with minimal setup.
@@ -42,6 +37,9 @@ bundled configuration and brings the stack up.
 
 ## What is Configured
 
+> [!Warning]
+> This playground is for demonstration purposes only. Due to the size limitations of GitHub Codespaces, TeXLive Full image is not included in this playground. We use TeXLive Basic image instead for demonstration.
+
 - [x] Sandboxed LaTeX compilation with TeXLive **Basic** (2026-2024)
 - [x] Pandoc Import/Export (Features in SaaS Platform)
 - [x] Python Script Runner (Features in SaaS Platform)
@@ -54,8 +52,23 @@ bundled configuration and brings the stack up.
 
 GitHub Sync, LDAP, OAuth, SSO, Zotero Integration, and other features are not configured in this playground. You can refer to the [Ayakaleaf Pro documentation](https://ayakaleaf-pro.ayaka.space/on-premises/configuration/overleaf-toolkit) for more details on how to configure these features in your own deployment.
 
-## Installation
+## Production Deployment
 
 This repository is a demo playground. For a real deployment, see the detailed
 instructions on the [Documents](https://ayakaleaf-pro.ayaka.space/on-premises/configuration/overleaf-toolkit) page.
 
+### Use TeXLive Full Image
+
+If you have acces to 8core/64GB GitHub Codespaces, you can use TeXLive Full image in this playground. You can change the following environment variables in `toolkit/config/variables.env` file to use TeXLive Full image instead of TeXLive Basic image.
+
+```
+ALL_TEX_LIVE_DOCKER_IMAGES=ghcr.io/ayaka-notes/texlive-full:2026.1, ghcr.io/ayaka-notes/texlive-full:2025.1, ghcr.io/ayaka-notes/texlive-full:2024.1
+ALL_TEX_LIVE_DOCKER_IMAGE_NAMES=Texlive 2026, Texlive 2025, Texlive 2024
+TEX_LIVE_DOCKER_IMAGE=ghcr.io/ayaka-notes/texlive-full:2026.1
+```
+
+After changing the environment variables, you need to restart the toolkit to apply the changes. You can run the following command to restart the toolkit.
+
+```bash
+cd toolkit && bin/up -d
+```
