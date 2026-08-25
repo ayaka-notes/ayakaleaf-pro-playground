@@ -1,16 +1,16 @@
 <h1 align="center">
   <br>
-  <a href="https://overleaf-pro.ayaka.space"><img src="https://raw.githubusercontent.com/ayaka-notes/ayakaleaf-pro/server-pro/doc/logo.png" alt="Ayakaleaf Pro" width="300"></a>
+  <a href="https://ayakaleaf-pro.ayaka.space"><img src="https://raw.githubusercontent.com/ayaka-notes/ayakaleaf-pro/server-pro/doc/logo.png" alt="Ayakaleaf Pro" width="300"></a>
 </h1>
 
 <h4 align="center">A one-click GitHub Codespaces playground for Ayakaleaf Pro <br/>(open source, free to use, self-hostable).</h4>
 
 <p align="center">
-  <a href="https://overleaf-pro.ayaka.space">Documents</a> •
+  <a href="https://ayakaleaf-pro.ayaka.space">Documents</a> •
   <a href="https://github.com/ayaka-notes/ayakaleaf-pro">Ayakaleaf Pro</a> •
   <a href="https://github.com/orgs/ayaka-notes/packages/container/package/overleaf-pro">Docker Image</a> •
   <a href="https://github.com/ayaka-notes/texlive-full">TeXLive</a> •
-  <a href="https://overleaf-pro.ayaka.space/dev">Developer</a> •
+  <a href="https://ayakaleaf-pro.ayaka.space/dev">Developer</a> •
   <a href="#authors">Authors</a> •
   <a href="#license">License</a>
 </p>
@@ -59,7 +59,7 @@ instructions on the [Documents](https://ayakaleaf-pro.ayaka.space/on-premises/co
 
 ### Use TeXLive Full Image
 
-If you have acces to 8core/64GB GitHub Codespaces, you can use TeXLive Full image in this playground. You can change the following environment variables in `toolkit/config/variables.env` file to use TeXLive Full image instead of TeXLive Basic image.
+If you have access to 8core/64GB GitHub Codespaces, you can use TeXLive Full image in this playground. You can change the following environment variables in `toolkit/config/variables.env` file to use TeXLive Full image instead of TeXLive Basic image.
 
 ```
 ALL_TEX_LIVE_DOCKER_IMAGES=ghcr.io/ayaka-notes/texlive-full:2026.1, ghcr.io/ayaka-notes/texlive-full:2025.1, ghcr.io/ayaka-notes/texlive-full:2024.1
