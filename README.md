@@ -50,7 +50,7 @@ bundled configuration and brings the stack up.
 - [x] Full Project History(With Restore and Download)
 - [x] Symbol Palette (Features in Server Pro/SaaS Platform)
 
-GitHub Sync, LDAP, OAuth, SSO, Zotero Integration, and other features are not configured in this playground. You can refer to the [Ayakaleaf Pro documentation](https://ayakaleaf-pro.ayaka.space/on-premises/configuration/overleaf-toolkit) for more details on how to configure these features in your own deployment.
+GitHub Sync, LDAP, OAuth, SSO, Zotero Integration, and other features are **not configured** in this playground. You can refer to the [Ayakaleaf Pro documentation](https://ayakaleaf-pro.ayaka.space/on-premises/configuration/overleaf-toolkit) for more details on how to configure these features in your own deployment.
 
 ## Production Deployment
 
