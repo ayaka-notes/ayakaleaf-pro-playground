@@ -31,5 +31,5 @@ echo "Ayakaleaf Pro is starting up. First boot takes a few minutes."
 if [ -n "$SITE_URL" ]; then
     echo "Open: $SITE_URL"
 else
-    echo "Open: http://localhost:${OVERLEAF_PORT:-80}"
+    echo "Open: http://localhost:${OVERLEAF_PORT:-80}/launchpad"
 fi
